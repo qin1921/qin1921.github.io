@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>走走看看</title>
-  <meta name="keywords" content>
-  <meta name="description" content="走走看看">
+  <title>数字均衡公式推导 | 走走看看</title>
+  <meta name="keywords" content=" 随机信号 , 数字通信 ">
+  <meta name="description" content="数字均衡公式推导 | 走走看看">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
 <meta property="og:type" content="article">
@@ -52,7 +52,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -257,12 +257,57 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-2019-07-05-数字均衡公式推导" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于叶落阁"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">数字均衡公式推导</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a href="javascript:" data-rel="通信原理基础">通信原理基础</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color5">随机信号</a>
+            
+            <a href="javascript:" class="color5">数字通信</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-07-31 11:53:59'>2019-07-04 00:00</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-符号"><span class="toc-text">1. 符号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-MF匹配滤波器均衡"><span class="toc-text">2. MF匹配滤波器均衡</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-ZF迫零均衡"><span class="toc-text">3. ZF迫零均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-mathbf-x-为实向量的情况"><span class="toc-text">3.1 $\mathbf{x}$为实向量的情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-mathbf-x-为复向量的情况"><span class="toc-text">3.2 $\mathbf{x}$为复向量的情况</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-MMSE均衡"><span class="toc-text">4. MMSE均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-mathbf-G-为实矩阵的情况"><span class="toc-text">4.1 $\mathbf{G}$为实矩阵的情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-mathbf-G-为复矩阵的情况"><span class="toc-text">4.2 $\mathbf{G}$为复矩阵的情况</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -275,32 +320,66 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阿杰（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <head><meta name="generator" content="Hexo 3.9.0">
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
 
-        </article>
-        
-        
+<h1 id="1-符号"><a href="#1-符号" class="headerlink" title="1. 符号"></a>1. 符号</h1><ul>
+<li>发射信号是长度为$N_x$的列向量 $\mathbf{x}=[x_1,x_2,\ldots,x_{N_x}]^T$</li>
+<li>信道冲激响应是长度为$N_h$的列向量$\mathbf{h}$，这是一个已知量，可以通过信道估计算法得到</li>
+<li>噪声是长度为$N_y=N_x+N_h-1$的列向量$\mathbf{z}$</li>
+<li>接收信号是长度为$N_y=N_x+N_h-1$的列向量$\mathbf{y}$</li>
+</ul>
+<p>则有如下关系：<br>$$<br>\mathbf{y=Ax+z}<br>$$<br>其中<br>$$<br>\mathbf{H}=\left[\begin{array}{llll}<br>1 &amp; 2 &amp; 3&amp; 4 \<br>1 &amp; 2 &amp; 3&amp; 4<br>\end{array}\right]<br>$$<br>接收端需要根据接收到的信号$\mathbf{y}$，重构得到$\mathbf{x}$的估计值$\mathbf{\hat{x}}$，重构方法是使用均衡矩阵$\mathbf{G}$进行如下运算：<br>$$<br>\mathbf{\hat{x}=Gy}<br>$$</p>
+<p><img src="leanote://file/getImage?fileId=57eb9c9eab644106a0000115" alt></p>
+<p><img src="leanote://file/getImage?fileId=57eb9c9eab644106a0000117" alt></p>
+<p><img src="leanote://file/getImage?fileId=57eb9c9eab644106a0000119" alt></p>
+<p>假定$\mathbf{z}=\mathbf{x}+j\mathbf{y}$为复向量，则<br>$$<br>\frac{\partial f(\mathbf{z})}{\partial \mathbf{z}}=\frac{1}{2}\left[\frac{\partial f(\mathbf{z})}{\partial \mathbf{x}}-j\frac{\partial f(\mathbf{z})}{\partial \mathbf{y}}\right]<br>$$</p>
+<h1 id="2-MF匹配滤波器均衡"><a href="#2-MF匹配滤波器均衡" class="headerlink" title="2. MF匹配滤波器均衡"></a>2. MF匹配滤波器均衡</h1><h1 id="3-ZF迫零均衡"><a href="#3-ZF迫零均衡" class="headerlink" title="3. ZF迫零均衡"></a>3. ZF迫零均衡</h1><p>需要获得$\mathbf{x}$的最优估计，使得<br>$$<br>L=|\mathbf{y-Ax}|^2<br>$$<br>最小，即最小二乘准则，如果$\mathbf{z}$服从复高斯分布，上式等价于最大似然准则。</p>
+<h2 id="3-1-mathbf-x-为实向量的情况"><a href="#3-1-mathbf-x-为实向量的情况" class="headerlink" title="3.1 $\mathbf{x}$为实向量的情况"></a>3.1 $\mathbf{x}$为实向量的情况</h2><p>根据已有结论：<br>\begin{eqnarray}<br>\frac{\partial \mathbf{x^Ta}}{\partial \mathbf{x}} &amp;=&amp; \frac{\partial \mathbf{a^Tx}}{\partial \mathbf{x}} = \mathbf{a} \<br>\frac{\partial \mathbf{x^TBx}}{\partial \mathbf{x}} &amp;=&amp; \mathbf{(B+B^T)x}<br>\end{eqnarray}<br>假设均为实向量和实矩阵，则有<br>$$<br>L=\mathbf{(y-Ax)^T(y-Ax)}=\mathbf{y^Ty-x^TA^Ty-y^TAx+x^TA^TAx}<br>$$<br>要使$L$最小，则应使得下式为0<br>$$<br>\frac{\partial L}{\partial \mathbf{x}}=\mathbf{-2A^Ty+2A^TAx}=0<br>$$<br>从而推得<br>$$<br>\mathbf{x} = \mathbf{(A^TA)}^{-1}\mathbf{A^Ty}<br>$$</p>
+<h2 id="3-2-mathbf-x-为复向量的情况"><a href="#3-2-mathbf-x-为复向量的情况" class="headerlink" title="3.2 $\mathbf{x}$为复向量的情况"></a>3.2 $\mathbf{x}$为复向量的情况</h2><p>根据《Complex-Valued Matrix Derivatives:With Applications in Signal Processing and Communications》表4.2已有结论：<br>\begin{eqnarray}<br>\frac{\partial \mathbf{x^Ha}}{\partial \mathbf{x}} &amp;=&amp; 0 \<br>\frac{\partial \mathbf{x^HBx}}{\partial \mathbf{x}} &amp;=&amp; \mathbf{x^HB}<br>\end{eqnarray}<br>则有<br>$$<br>L=\mathbf{(y-Ax)^H(y-Ax)}=\mathbf{y^Ay-x^HA^Hy-y^HAx+x^HA^HAx}<br>$$<br>要使$L$最小，则应使得下式为0<br>$$<br>\frac{\partial L}{\partial \mathbf{x}}=\mathbf{-y^HA+x^HA^HA}=0<br>$$<br>从而推得<br>$$<br>\mathbf{x} = \mathbf{(A^HA)}^{-1}\mathbf{A^Hy}<br>$$</p>
+<h1 id="4-MMSE均衡"><a href="#4-MMSE均衡" class="headerlink" title="4. MMSE均衡"></a>4. MMSE均衡</h1><p>假设发射信号也是随机变量，它和噪声均服从0均值高斯分布，其方差分别为$\sigma_x^2$和$\sigma_z^2$，需要寻找$\mathbf{G}$使得下式最小：<br>$$<br>J=\mathbb{E}[\mathbf{|\hat{x}-x|}^2]<br>$$</p>
+<h2 id="4-1-mathbf-G-为实矩阵的情况"><a href="#4-1-mathbf-G-为实矩阵的情况" class="headerlink" title="4.1 $\mathbf{G}$为实矩阵的情况"></a>4.1 $\mathbf{G}$为实矩阵的情况</h2><p>由于该式的结果为标量，故可变形如下<br>\begin{eqnarray}<br>J &amp;=&amp; \mathbb{E}[\mathbf{|\hat{x}-x|}^2]=\mathbb{E}[\mathbf{|Gy-x|}^2] = \mathbb{E}[\mathbf{(Gy-x)^T(Gy-x)}] \<br>  &amp;=&amp; \mathbb{E}[\mathbf{y^TG^TGy-y^TG^Tx-x^TGy+x^Tx}] \<br>  &amp;=&amp; \mathbb{E}[\mathbf{y^TG^TGy-y^TG^Tx-x^TGy+x^Tx}]  \<br>  &amp;=&amp; \mathbb{E}[\mathbf{y^TG^TGy-y^TG^Tx-x^TGy}]+\sigma_x^2  \<br>\end{eqnarray}<br>要使上式最小，只需找到$\mathbf{G}$使$\frac{\partial J}{\partial \mathbf{G}}=0$，根据已有结论：<br>\begin{eqnarray}<br>\frac{\partial \mathbf{b^TX^TXc}}{\partial \mathbf{X}}&amp;=&amp;\mathbf{X(cb^T+bc^T)} \<br>\frac{\partial \mathbf{a^TXb}}{\partial \mathbf{X}}&amp;=&amp;\mathbf{ab^T} \<br>\frac{\partial \mathbf{a^TX^Tb}}{\partial \mathbf{X}}&amp;=&amp;\mathbf{ba^T} \<br>\end{eqnarray}<br>代入上式（假设均为实向量和实矩阵）：<br>$$<br>\frac{\partial J}{\partial \mathbf{G}}=\mathbb{E}[\mathbf{2Gyy^T-2yx^T}] =2\mathbf{G}\mathbb{E}[\mathbf{yy^T}]-2\mathbb{E}[\mathbf{yx^T}] = 0<br>$$<br>因而有：<br>$$<br>\mathbf{G}\mathbb{E}[\mathbf{yy^T}]=\mathbb{E}[\mathbf{yx^T}]<br>$$<br>又因为：<br>\begin{eqnarray}<br>\mathbb{E}[\mathbf{yy^T}] &amp;=&amp; \mathbb{E}[\mathbf{(Ax+z)(Ax+z)^T}]  \<br>  &amp;=&amp; \mathbb{E}[\mathbf{Axx^TA^T+Axz^T+x^TA^Tz+zz^T}] \<br>  &amp;=&amp; \mathbf{A\mathbb{E}(xx^T)A^T}+\sigma_z^2\mathbf{I}=\sigma_x^2\mathbf{AA^T}+\sigma_z^2\mathbf{I} \<br>\mathbb{E}[\mathbf{yx^T}] &amp;=&amp; \mathbb{E}[\mathbf{(Ax+z)x^T}] = \sigma_x^2\mathbf{A}<br>\end{eqnarray}<br>从而可以推得：<br>$$<br>\mathbf{G}=(\mathbf{AA^T}+\frac{\sigma_x^2}{\sigma_z^2}\mathbf{I})^{-1}\mathbf{A}<br>$$</p>
+<h2 id="4-2-mathbf-G-为复矩阵的情况"><a href="#4-2-mathbf-G-为复矩阵的情况" class="headerlink" title="4.2 $\mathbf{G}$为复矩阵的情况"></a>4.2 $\mathbf{G}$为复矩阵的情况</h2><p>由于该式的结果为标量，故可变形如下<br>\begin{eqnarray}<br>J &amp;=&amp; \mathbb{E}[\mathbf{|\hat{x}-x|}^2]=\mathbb{E}[\mathbf{|Gy-x|}^2] = \mathbb{E}\left[\mathrm{Tr}\left[\mathbf{(Gy-x)^H(Gy-x)}\right]\right] \<br>  &amp;=&amp; \mathbb{E}[\mathrm{Tr}(\mathbf{y^HG^HGy-y^HG^Hx-x^HGy+x^Hx})] \<br>  &amp;=&amp; \mathbb{E}[\mathrm{Tr}(\mathbf{Gyy^HG^H-y^HG^Hx-x^HGy+x^Hx})]  \<br>  &amp;=&amp; \mathbb{E}[\mathrm{Tr}(\mathbf{Gyy^HG^H-y^HG^Hx-x^HGy})]+\sigma_x^2  \<br>\end{eqnarray}<br>要使上式最小，只需找到$\mathbf{G}$使$\frac{\partial J}{\partial \mathbf{G}}=0$，根据已有结论：<br>\begin{eqnarray}<br>\frac{\partial \mathrm{Tr}(\mathbf{ZA_0Z^HA_1})}{\partial \mathbf{Z}}&amp;=&amp;\mathbf{A_1^TZ^<em>A_0^T} \<br>\frac{\partial \mathrm{Tr}(\mathbf{a^HZ^Hb})}{\partial \mathbf{Z}}&amp;=&amp; \mathbf{0} \<br>\frac{\partial \mathrm{Tr}(\mathbf{a^HZb})}{\partial \mathbf{Z}}&amp;=&amp;\mathbf{a^<em>b^T} \<br>\end{eqnarray}<br>代入上式：<br>$$<br>\frac{\partial J}{\partial \mathbf{G}}=\mathbb{E}[\mathbf{G^</em>y^<em>y^T-x^</em>y^T}] =\mathbf{G^</em>}\mathbb{E}[\mathbf{y^<em>y^T}]-\mathbb{E}[\mathbf{x^</em>y^T}] = 0<br>$$<br>因而有：<br>$$<br>\mathbf{G}\mathbb{E}[\mathbf{yy^H}]=\mathbb{E}[\mathbf{xy^H}]<br>$$<br>又因为：<br>\begin{eqnarray}<br>\mathbb{E}[\mathbf{yy^H}] &amp;=&amp; \mathbb{E}[\mathbf{(Ax+z)(Ax+z)^H}]  \<br>  &amp;=&amp; \mathbb{E}[\mathbf{Axx^HA^H+Axz^H+zx^HA^H+zz^H}] \<br>  &amp;=&amp; \mathbf{A\mathbb{E}(xx^H)A^H}+\sigma_z^2\mathbf{I}=\sigma_x^2\mathbf{AA^H}+\sigma_z^2\mathbf{I} \<br>\mathbb{E}[\mathbf{yx^H}] &amp;=&amp; \mathbb{E}[\mathbf{(Ax+z)x^H}] = \sigma_x^2\mathbf{A}<br>\end{eqnarray}<br>从而可以推得：<br>$$<br>\mathbf{G}=(\mathbf{AA^H}+\frac{\sigma_z^2}{\sigma_x^2}\mathbf{I})^{-1}\mathbf{A}<br>$$</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>数字均衡公式推导</p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="qin1921">qin1921</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-07-04, 00:00:00</p>
+    <p><span class="copy-title">最后更新:</span>2019-07-31, 11:53:59</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/07/04/2019-07-05-数字均衡公式推导/" title="数字均衡公式推导">http://qin1921.github.io/2019/07/04/2019-07-05-数字均衡公式推导/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Yelog</p>
