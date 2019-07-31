@@ -6,17 +6,17 @@
   <meta name="keywords" content=" 强化学习 , 深度学习 , 策略搜索 ">
   <meta name="description" content="行波管放大器 | 走走看看">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新的一天">
 <meta property="og:url" content="http://qin1921.github.io/2019/07/31/新的一天/index.html">
 <meta property="og:site_name" content="走走看看">
-<meta property="og:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta property="og:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-31T03:26:47.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新的一天">
-<meta name="twitter:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta name="twitter:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -223,6 +223,14 @@
             <span class="post-date" title="2019-07-04 00:00:00">2019/07/04</span>
         </a>
         
+        <a  class="LTE "
+           href="/2019/07/09/2019-07-09-上行时间提前量调节/"
+           data-tag="srsLTE,LTE,移动通信"
+           data-author="" >
+            <span class="post-title" title="上行时间提前量的调节">上行时间提前量的调节</span>
+            <span class="post-date" title="2019-07-09 00:00:00">2019/07/09</span>
+        </a>
+        
         <a  class=""
            href="/2019/07/31/新的一天/"
            data-tag=""
@@ -237,14 +245,6 @@
            data-author="" >
             <span class="post-title" title="Hello World">Hello World</span>
             <span class="post-date" title="2019-07-31 11:00:54">2019/07/31</span>
-        </a>
-        
-        <a  class="LTE "
-           href="/2019/07/09/2019-07-09-上行时间提前量调节/"
-           data-tag="srsLTE,LTE,移动通信"
-           data-author="" >
-            <span class="post-title" title="上行时间提前量的调节">上行时间提前量的调节</span>
-            <span class="post-date" title="2019-07-09 00:00:00">2019/07/09</span>
         </a>
         
     </nav>
@@ -303,7 +303,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#TWTA的相位特性（AM-PM-conversion）"><span class="toc-text">TWTA的相位特性（AM/PM conversion）</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#twta的相位特性ampm-conversion"><span class="toc-text">TWTA的相位特性（AM/PM conversion）</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -319,8 +319,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <head><meta name="generator" content="Hexo 3.9.0">
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -329,11 +329,9 @@
         });
     </script>
 </head>
-
-
-
 <p>两个载波情况下，TWTA不能提供满功率输出。从图中可以看出，100W的TWTA输出降低约1.5dB，也就是只能输出70W，功率损失巨大。剩余功率去哪了？我们晚点再来回答这个问题。</p>
-<h2 id="TWTA的相位特性（AM-PM-conversion）"><a href="#TWTA的相位特性（AM-PM-conversion）" class="headerlink" title="TWTA的相位特性（AM/PM conversion）"></a>TWTA的相位特性（AM/PM conversion）</h2><p>小信号区域相移可以忽略，随着输入功率提高，相移可以逐步升高至50度。</p>
+<h2 id="twta的相位特性ampm-conversion">TWTA的相位特性（AM/PM conversion）</h2>
+<p>小信号区域相移可以忽略，随着输入功率提高，相移可以逐步升高至50度。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>

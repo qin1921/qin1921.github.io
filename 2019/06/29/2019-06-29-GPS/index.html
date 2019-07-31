@@ -6,17 +6,17 @@
   <meta name="keywords" content=" 强化学习 , 深度学习 , 策略搜索 ">
   <meta name="description" content="Guided Policy Search | 走走看看">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新的一天">
 <meta property="og:url" content="http://qin1921.github.io/2019/07/31/新的一天/index.html">
 <meta property="og:site_name" content="走走看看">
-<meta property="og:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta property="og:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-31T03:26:47.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新的一天">
-<meta name="twitter:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta name="twitter:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -223,6 +223,14 @@
             <span class="post-date" title="2019-07-04 00:00:00">2019/07/04</span>
         </a>
         
+        <a  class="LTE "
+           href="/2019/07/09/2019-07-09-上行时间提前量调节/"
+           data-tag="srsLTE,LTE,移动通信"
+           data-author="" >
+            <span class="post-title" title="上行时间提前量的调节">上行时间提前量的调节</span>
+            <span class="post-date" title="2019-07-09 00:00:00">2019/07/09</span>
+        </a>
+        
         <a  class=""
            href="/2019/07/31/新的一天/"
            data-tag=""
@@ -237,14 +245,6 @@
            data-author="" >
             <span class="post-title" title="Hello World">Hello World</span>
             <span class="post-date" title="2019-07-31 11:00:54">2019/07/31</span>
-        </a>
-        
-        <a  class="LTE "
-           href="/2019/07/09/2019-07-09-上行时间提前量调节/"
-           data-tag="srsLTE,LTE,移动通信"
-           data-author="" >
-            <span class="post-title" title="上行时间提前量的调节">上行时间提前量的调节</span>
-            <span class="post-date" title="2019-07-09 00:00:00">2019/07/09</span>
         </a>
         
     </nav>
@@ -303,7 +303,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#算法流程"><span class="toc-text">算法流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据收集"><span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Fit-Dynamics"><span class="toc-text">Fit  Dynamics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化"><span class="toc-text">优化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数学基础"><span class="toc-text">数学基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-projection-amp-M-projection-信息映射与动量映射"><span class="toc-text">I-projection &amp; M-projection 信息映射与动量映射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EM算法"><span class="toc-text">EM算法</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#算法流程"><span class="toc-text">算法流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据收集"><span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fit-dynamics"><span class="toc-text">Fit Dynamics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化"><span class="toc-text">优化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数学基础"><span class="toc-text">数学基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#i-projection-m-projection-信息映射与动量映射"><span class="toc-text">I-projection &amp; M-projection 信息映射与动量映射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#em算法"><span class="toc-text">EM算法</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -319,8 +319,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <head><meta name="generator" content="Hexo 3.9.0">
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -329,20 +329,44 @@
         });
     </script>
 </head>
-
-<p>$$<br>\min_{\theta, q(\tau)} D_{\mathrm{KL}}(q(\tau) | \rho(\tau)) \label{obj}<br>$$</p>
-<p>$$<br>\begin{align}<br>\text { s.t. } &amp; q\left(\mathbf{x}<em>{1}\right)=p\left(\mathbf{x}</em>{1}\right) \<br>&amp; q\left(\mathrm{x}<em>{t+1} | \mathrm{x}</em>{t}, \mathbf{u}<em>{t}\right)=p(\mathbf{x}</em>{t+1} | \mathbf{x}<em>{t}, \mathbf{u}</em>{t}) \<br>&amp; D_{\mathrm{KL}}\left(q\left(\mathrm{x}<em>{t}\right) \pi</em>{\theta}\left(\mathbf{u}<em>{t} | \mathrm{x}</em>{t}\right) | q\left(\mathrm{x}<em>{t}, \mathbf{u}</em>{t}\right)\right)=0<br>\end{align}<br>$$</p>
-<p>$p(\mathbf{x}<em>1)$ 为domain初始状态的概率，$p(\mathbf{x}</em>{t+1} \vert \mathbf{x}<em>{t}, \mathbf{u}</em>{t})$为系统的转移概率，这两项应该由环境确定?</p>
-<p>$\rho(\tau)$是基于轨迹样本构造出来的引导分布，$q(\tau)$是<strong>控制还是监督相??</strong>实现的近似分布，希望能够逼近引导分布。</p>
-<h1 id="算法流程"><a href="#算法流程" class="headerlink" title="算法流程"></a>算法流程</h1><p><a href="http://www.meltycriss.com/2018/05/17/summary-gps/" target="_blank" rel="noopener">http://www.meltycriss.com/2018/05/17/summary-gps/</a></p>
-<h2 id="数据收集"><a href="#数据收集" class="headerlink" title="数据收集"></a>数据收集</h2><p>使用controller与environment进行交互，得到轨迹数据集$D={\tau_i}$，其中轨迹$\tau_i=x_{i1},u_{i1},\ldots,x_{iT},u_{iT}$。</p>
-<p><img src="1.png" alt="1.png"></p>
-<h2 id="Fit-Dynamics"><a href="#Fit-Dynamics" class="headerlink" title="Fit  Dynamics"></a>Fit  Dynamics</h2><p>使用第一步得到的轨迹数据集来拟合一个时变的线性模型：$x_{t+1}=f(x_t,u_t)=A_tx_t+B_tu_t+c_t$，也就是说这个model<strong>对于不同时刻$t$的输入会使用不同的线性模型</strong>。具体的拟合方法是使用同一时刻$t$不同轨迹$\tau_i$的数据$(x_{1t},u_{1t},x_{1,t+1}),\ldots,(x_{it},u_{it},x_{i,t+1})$来做linear regression。</p>
-<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h1 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h1><h2 id="I-projection-amp-M-projection-信息映射与动量映射"><a href="#I-projection-amp-M-projection-信息映射与动量映射" class="headerlink" title="I-projection &amp; M-projection 信息映射与动量映射"></a>I-projection &amp; M-projection 信息映射与动量映射</h2><p>Trajectory $\tau$的概率分布$\rho(\tau)$的I-projection定义为：</p>
-<p>$$<br>q^*(\tau)=\arg\min_{q\in P}D_{KL}(q(\tau)||\rho(\tau))<br>$$</p>
-<p>其中KL距离(KL-Divergence)<br>$$<br>D_{KL}(q(\tau)||\rho(\tau))=\sum_\tau q(\tau)\log \frac{q(\tau)}{\rho(\tau)}=\mathbb{E}_q[-r(\tau)]-\mathcal{H}(q) \label{kld}<br>$$</p>
-<p>用来衡量$q$与$\rho$两个概率分布的差异。差距越大，KL距离越大；当$q=\rho$时, KL距离为0。目标分布（或者说是引导分布）$\rho(\tau)$ 应该在高回报区域具有高的概率密度，故可以设定$\rho(\tau)\propto\exp(r(\tau))$，这里$r(\tau)$是trajectory  $\tau$的累积回报，代入式$\ref{kld}$可得：<br>$$<br>D_{KL}(q(\tau)||\rho(\tau))=-\sum_\tau q(\tau)\log \rho(\tau)+\sum_\tau q(\tau)\log q(\tau)=-\mathbb{E}_q[r(\tau)]-\mathcal{H}(q)<br>$$<br>其中$\mathcal{H}$代表熵， 其中第一项强制$q$位于回报更高的区域，第二项鼓励$q$具有更大的不确定性。</p>
-<h2 id="EM算法"><a href="#EM算法" class="headerlink" title="EM算法"></a>EM算法</h2><p>$$<br>\theta^{*}=\arg \max <em>{\theta} \sum</em>{X} \log L(\theta | X)<br>$$</p>
+<p><span class="math display">\[
+\min_{\theta, q(\tau)} D_{\mathrm{KL}}(q(\tau) \| \rho(\tau)) \label{obj}
+\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+\text { s.t. } &amp; q\left(\mathbf{x}_{1}\right)=p\left(\mathbf{x}_{1}\right) \\
+&amp; q\left(\mathrm{x}_{t+1} | \mathrm{x}_{t}, \mathbf{u}_{t}\right)=p(\mathbf{x}_{t+1} | \mathbf{x}_{t}, \mathbf{u}_{t}) \\
+&amp; D_{\mathrm{KL}}\left(q\left(\mathrm{x}_{t}\right) \pi_{\theta}\left(\mathbf{u}_{t} | \mathrm{x}_{t}\right) \| q\left(\mathrm{x}_{t}, \mathbf{u}_{t}\right)\right)=0
+\end{align}
+\]</span></p>
+<p><span class="math inline">\(p(\mathbf{x}_1)\)</span> 为domain初始状态的概率，<span class="math inline">\(p(\mathbf{x}_{t+1} \vert \mathbf{x}_{t}, \mathbf{u}_{t})\)</span>为系统的转移概率，这两项应该由环境确定?</p>
+<p><span class="math inline">\(\rho(\tau)\)</span>是基于轨迹样本构造出来的引导分布，<span class="math inline">\(q(\tau)\)</span>是<strong>控制还是监督相??</strong>实现的近似分布，希望能够逼近引导分布。</p>
+<h1 id="算法流程">算法流程</h1>
+<p><a href="http://www.meltycriss.com/2018/05/17/summary-gps/" class="uri" target="_blank" rel="noopener">http://www.meltycriss.com/2018/05/17/summary-gps/</a></p>
+<h2 id="数据收集">数据收集</h2>
+<p>使用controller与environment进行交互，得到轨迹数据集<span class="math inline">\(D=\{\tau_i\}\)</span>，其中轨迹<span class="math inline">\(\tau_i=x_{i1},u_{i1},\ldots,x_{iT},u_{iT}\)</span>。</p>
+<figure>
+<img src="1.png" alt><figcaption>1.png</figcaption>
+</figure>
+<h2 id="fit-dynamics">Fit Dynamics</h2>
+<p>使用第一步得到的轨迹数据集来拟合一个时变的线性模型：<span class="math inline">\(x_{t+1}=f(x_t,u_t)=A_tx_t+B_tu_t+c_t\)</span>，也就是说这个model<strong>对于不同时刻<span class="math inline">\(t\)</span>的输入会使用不同的线性模型</strong>。具体的拟合方法是使用同一时刻<span class="math inline">\(t\)</span>不同轨迹<span class="math inline">\(\tau_i\)</span>的数据<span class="math inline">\((x_{1t},u_{1t},x_{1,t+1}),\ldots,(x_{it},u_{it},x_{i,t+1})\)</span>来做linear regression。</p>
+<h2 id="优化">优化</h2>
+<h1 id="数学基础">数学基础</h1>
+<h2 id="i-projection-m-projection-信息映射与动量映射">I-projection &amp; M-projection 信息映射与动量映射</h2>
+<p>Trajectory <span class="math inline">\(\tau\)</span>的概率分布<span class="math inline">\(\rho(\tau)\)</span>的I-projection定义为：</p>
+<p><span class="math display">\[
+q^*(\tau)=\arg\min_{q\in P}D_{KL}(q(\tau)||\rho(\tau))
+\]</span></p>
+<p>其中KL距离(KL-Divergence) <span class="math display">\[
+D_{KL}(q(\tau)||\rho(\tau))=\sum_\tau q(\tau)\log \frac{q(\tau)}{\rho(\tau)}=\mathbb{E}_q[-r(\tau)]-\mathcal{H}(q) \label{kld}
+\]</span></p>
+<p>用来衡量<span class="math inline">\(q\)</span>与<span class="math inline">\(\rho\)</span>两个概率分布的差异。差距越大，KL距离越大；当<span class="math inline">\(q=\rho\)</span>时, KL距离为0。目标分布（或者说是引导分布）<span class="math inline">\(\rho(\tau)\)</span> 应该在高回报区域具有高的概率密度，故可以设定<span class="math inline">\(\rho(\tau)\propto\exp(r(\tau))\)</span>，这里<span class="math inline">\(r(\tau)\)</span>是trajectory <span class="math inline">\(\tau\)</span>的累积回报，代入式<span class="math inline">\(\ref{kld}\)</span>可得： <span class="math display">\[
+D_{KL}(q(\tau)||\rho(\tau))=-\sum_\tau q(\tau)\log \rho(\tau)+\sum_\tau q(\tau)\log q(\tau)=-\mathbb{E}_q[r(\tau)]-\mathcal{H}(q)
+\]</span> 其中<span class="math inline">\(\mathcal{H}\)</span>代表熵， 其中第一项强制<span class="math inline">\(q\)</span>位于回报更高的区域，第二项鼓励<span class="math inline">\(q\)</span>具有更大的不确定性。</p>
+<h2 id="em算法">EM算法</h2>
+<p><span class="math display">\[
+\theta^{*}=\arg \max _{\theta} \sum_{X} \log L(\theta | X)
+\]</span></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>

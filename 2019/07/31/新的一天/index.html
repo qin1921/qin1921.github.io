@@ -6,17 +6,17 @@
   <meta name="keywords" content>
   <meta name="description" content="新的一天 | 走走看看">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta name="description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新的一天">
 <meta property="og:url" content="http://qin1921.github.io/2019/07/31/新的一天/index.html">
 <meta property="og:site_name" content="走走看看">
-<meta property="og:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta property="og:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-31T03:26:47.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新的一天">
-<meta name="twitter:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connection">
+<meta name="twitter:description" content="虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接 12345678910111213141516participant UEparticipant eNBparticipant MMEeNB-&amp;gt;MME: s1SetupRequestMME-&amp;gt;eNB: s1SetupResponseUE-&amp;gt;eNB: SRB0 : RRC Connectio">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -223,6 +223,14 @@
             <span class="post-date" title="2019-07-04 00:00:00">2019/07/04</span>
         </a>
         
+        <a  class="LTE "
+           href="/2019/07/09/2019-07-09-上行时间提前量调节/"
+           data-tag="srsLTE,LTE,移动通信"
+           data-author="" >
+            <span class="post-title" title="上行时间提前量的调节">上行时间提前量的调节</span>
+            <span class="post-date" title="2019-07-09 00:00:00">2019/07/09</span>
+        </a>
+        
         <a  class=""
            href="/2019/07/31/新的一天/"
            data-tag=""
@@ -237,14 +245,6 @@
            data-author="" >
             <span class="post-title" title="Hello World">Hello World</span>
             <span class="post-date" title="2019-07-31 11:00:54">2019/07/31</span>
-        </a>
-        
-        <a  class="LTE "
-           href="/2019/07/09/2019-07-09-上行时间提前量调节/"
-           data-tag="srsLTE,LTE,移动通信"
-           data-author="" >
-            <span class="post-title" title="上行时间提前量的调节">上行时间提前量的调节</span>
-            <span class="post-date" title="2019-07-09 00:00:00">2019/07/09</span>
         </a>
         
     </nav>
@@ -293,7 +293,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#循环平稳过程"><span class="toc-text">循环平稳过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数字基带信号是循环平稳过程"><span class="toc-text">数字基带信号是循环平稳过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数字基带信号的PSD"><span class="toc-text">数字基带信号的PSD</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无记忆数字基带信号的PSD"><span class="toc-text">无记忆数字基带信号的PSD</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OQPSK的PSD"><span class="toc-text">OQPSK的PSD</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#循环平稳过程"><span class="toc-text">循环平稳过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数字基带信号是循环平稳过程"><span class="toc-text">数字基带信号是循环平稳过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数字基带信号的psd"><span class="toc-text">数字基带信号的PSD</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无记忆数字基带信号的psd"><span class="toc-text">无记忆数字基带信号的PSD</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#oqpsk的psd"><span class="toc-text">OQPSK的PSD</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -310,10 +310,9 @@
       
         <p>虚线连接标识NAS层上数据交互，经由SRB1承载，eNB，S1AP接口与MME的双向连接</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">participant UE</span><br><span class="line">participant eNB</span><br><span class="line">participant MME</span><br><span class="line"></span><br><span class="line">eNB-&gt;MME: s1SetupRequest</span><br><span class="line">MME-&gt;eNB: s1SetupResponse</span><br><span class="line">UE-&gt;eNB: SRB0 : RRC Connection Request(MSG3)</span><br><span class="line">eNB-&gt;UE: SRB0 : RRC Connection Setup</span><br><span class="line">note over UE: Create SRB1</span><br><span class="line">UE-&gt;eNB: SRB1 : RRCConnectionSetupComplete(携带NAS Attach Req.)</span><br><span class="line">eNB-&gt;MME: InitialUEMessage(转发UE发来的NAS Attach Req.)</span><br><span class="line">eNB-&gt;MME: Attach Request</span><br><span class="line">MME--&gt;UE: Sending ID Request(经由eNB，及eNB与UE的SRB1)</span><br><span class="line">UE--&gt;MME: [U0] UL NAS: Received Identity Response</span><br><span class="line">MME--&gt;UE: [D0] DL NAS: Authentication Request</span><br><span class="line">UE--&gt;MME: [U0] UL NAS: Authentication Response</span><br></pre></td></tr></table></figure>
-
 <head><meta name="generator" content="Hexo 3.9.0">
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -322,38 +321,96 @@
         });
     </script>
 </head>
-
-<h1 id="循环平稳过程"><a href="#循环平稳过程" class="headerlink" title="循环平稳过程"></a>循环平稳过程</h1><p>如果随机过程$X(t)$的均值和自相关函数是以$T$为周期的周期函数，则称其为<strong>循环平稳过程</strong>。</p>
+<h1 id="循环平稳过程">循环平稳过程</h1>
+<p>如果随机过程<span class="math inline">\(X(t)\)</span>的均值和自相关函数是以<span class="math inline">\(T\)</span>为周期的周期函数，则称其为<strong>循环平稳过程</strong>。</p>
 <p>循环平稳过程的平均自相关函数定义为一个周期上的平均，即：</p>
-<p>$$<br>\overline{R_X(\tau)}=\frac{1}{T}\int_0^TR_X(t+\tau,t)dt<br>$$</p>
+<p><span class="math display">\[
+\overline{R_X(\tau)}=\frac{1}{T}\int_0^TR_X(t+\tau,t)dt
+\]</span></p>
 <p>循环平稳过程的平均功率谱密度定义为平均自相关函数的傅里叶变换。</p>
-<p>$$<br>\mathcal{S}_X(f)=\mathcal{F}\left[\overline{R_X(\tau)}\right]<br>$$</p>
-<h2 id="数字基带信号是循环平稳过程"><a href="#数字基带信号是循环平稳过程" class="headerlink" title="数字基带信号是循环平稳过程"></a>数字基带信号是循环平稳过程</h2><p>假设信号$X(t)=\sum_n a_n g(t-nT_s)$，$a_n$为平稳随机序列，均值为$\mu_a$，自相关函数为$R_a(n)$，$g(t)$为成形脉冲，则$X(t)$为循环随机平稳过程。证明如下：</p>
+<p><span class="math display">\[
+\mathcal{S}_X(f)=\mathcal{F}\left[\overline{R_X(\tau)}\right]
+\]</span></p>
+<h2 id="数字基带信号是循环平稳过程">数字基带信号是循环平稳过程</h2>
+<p>假设信号<span class="math inline">\(X(t)=\sum_n a_n g(t-nT_s)\)</span>，<span class="math inline">\(a_n\)</span>为平稳随机序列，均值为<span class="math inline">\(\mu_a\)</span>，自相关函数为<span class="math inline">\(R_a(n)\)</span>，<span class="math inline">\(g(t)\)</span>为成形脉冲，则<span class="math inline">\(X(t)\)</span>为循环随机平稳过程。证明如下：</p>
 <ul>
-<li>$X(t)$的均值是周期为$T_s$的函数。</li>
+<li><span class="math inline">\(X(t)\)</span>的均值是周期为<span class="math inline">\(T_s\)</span>的函数。</li>
 </ul>
-<p>$$<br>\mathbb{E}[X(t)]=\sum_n \mathbb{E}(a_n)g(t-nT_s)=\mu_a\sum_n g(t-nT_s)<br>$$</p>
-<p>显然是周期为$T_s$的周期函数。</p>
+<p><span class="math display">\[
+\mathbb{E}[X(t)]=\sum_n \mathbb{E}(a_n)g(t-nT_s)=\mu_a\sum_n g(t-nT_s)
+\]</span></p>
+<p>显然是周期为<span class="math inline">\(T_s\)</span>的周期函数。</p>
 <ul>
-<li><p>$X(t)$的自相关是周期为$T_s$的函数。</p>
-<p>$$<br>\begin{aligned}<br>R_X(t+\tau,t)&amp;=\mathbb{E}[X(t+t)X^<em>(t)]=\mathbb{E}\left[\sum_m\sum_n a_m a_n^</em> g(t+\tau-mT_s)g^<em>(t-nT_s)\right] \<br>&amp;=\sum_{m=-\infty}^{+\infty}\sum_{n=-\infty}^{+\infty}\mathbb{E}[a_ma_n^*]g(t+\tau-mT_s)g^</em>(t-nT_s) \<br>&amp;=\sum_{m=-\infty}^{+\infty}\sum_{n=-\infty}^{+\infty}R_a(m-n)g(t+\tau-mT_s)g^<em>(t-nT_s) \<br>&amp;=\sum_{k=-\infty}^{+\infty}\sum_{n=-\infty}^{+\infty}R_a(k)g(t+\tau-kT_s-nT_s)g^</em>(t-nT_s)<br>\end{aligned}<br>$$</p>
-<p>上面最后一个公式使用了变量代换$k=m-n$。显然上式是周期为$T_s$的周期函数。</p>
-</li>
-<li><p>从而说明$X(t)$为循环随机平稳过程。</p>
-</li>
+<li><p><span class="math inline">\(X(t)\)</span>的自相关是周期为<span class="math inline">\(T_s\)</span>的函数。</p>
+<p><span class="math display">\[
+\begin{aligned}
+R_X(t+\tau,t)&amp;=\mathbb{E}[X(t+t)X^*(t)]=\mathbb{E}\left[\sum_m\sum_n a_m a_n^* g(t+\tau-mT_s)g^*(t-nT_s)\right] \\
+&amp;=\sum_{m=-\infty}^{+\infty}\sum_{n=-\infty}^{+\infty}\mathbb{E}[a_ma_n^*]g(t+\tau-mT_s)g^*(t-nT_s) \\
+&amp;=\sum_{m=-\infty}^{+\infty}\sum_{n=-\infty}^{+\infty}R_a(m-n)g(t+\tau-mT_s)g^*(t-nT_s) \\
+&amp;=\sum_{k=-\infty}^{+\infty}\sum_{n=-\infty}^{+\infty}R_a(k)g(t+\tau-kT_s-nT_s)g^*(t-nT_s) 
+\end{aligned}
+\]</span></p>
+<p>上面最后一个公式使用了变量代换<span class="math inline">\(k=m-n\)</span>。显然上式是周期为<span class="math inline">\(T_s\)</span>的周期函数。</p></li>
+<li><p>从而说明<span class="math inline">\(X(t)\)</span>为循环随机平稳过程。</p></li>
 </ul>
-<h2 id="数字基带信号的PSD"><a href="#数字基带信号的PSD" class="headerlink" title="数字基带信号的PSD"></a>数字基带信号的PSD</h2><p>假设信号$X(t)=\sum_n a_n g(t-nT_s)$，则其为循环随机平稳过程。则其平均自相关函数为：</p>
-<p>$$<br>\begin{aligned}<br>\overline{R_X(\tau)}&amp;=\frac{1}{T_s}\int_0^{T_s}R_X(t+\tau,t)dt \<br>&amp;=\frac{1}{T_s}\int_0^{T_s} \sum_{k=-\infty}^{+\infty}\sum_{m=-\infty}^{+\infty}R_a(k)g(t+\tau-kT_s-mT_s)g^<em>(t-mT_s) dt \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}\sum_{m=-\infty}^{+\infty}\int_0^{T_s}R_a(k)g(t+\tau-kT_s-mT_s)g^</em>(t-mT_s) dt \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}\sum_{m=-\infty}^{+\infty}\int_{-mT_s}^{-(m-1)T_s}R_a(k)g(u+\tau-kT_s)g^<em>(u) du\<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}\int_{-\infty}^{+\infty}R_a(k)g(u+\tau-kT_s)g^</em>(u) du<br>\end{aligned}<br>$$</p>
-<p>假设$g(t)$的傅里叶变换为$G(f)$，则上式的傅里叶变换即为功率谱密度函数，可推导如下：</p>
-<p>$$<br>\begin{aligned}<br>\mathcal{S}<em>X(f)&amp;=\int</em>{-\infty}^{+\infty}\overline{R_X(\tau)}e^{-j2\pi f\tau}d\tau \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(u+\tau-kT_s)g^<em>(u)e^{-j2\pi f\tau}du d\tau \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(u+\tau-kT_s)g^</em>(u)e^{j2\pi fu} e^{-j2\pi f(u+\tau-kT_s)} e^{-j2\pi fkT_s} du d\tau \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)e^{-j2\pi fkT_s}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(u+\tau-kT_s)g^*(u)e^{j2\pi fu} e^{-j2\pi f(u+\tau-kT_s)}du d\tau \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)e^{-j2\pi fkT_s}|G(f)|^2 \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}[R_a(k)-R_a(0)]e^{-j2\pi fkT_s}|G(f)|^2 + \frac{R_a(0)}{T_s}|G(f)|^2\sum_{k=-\infty}^{+\infty}e^{-j2\pi fkT_s} \<br>&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}[R_a(k)-R_a(0)]e^{-j2\pi fkT_s}|G(f)|^2 + \frac{R_a(0)}{T_s}|G(f)|^2\sum_{k=-\infty}^{+\infty}\delta(f+\frac{k}{T_s})<br>\end{aligned}<br>$$</p>
-<p>上面的推导中使用了一个重要的关系式：<br>$$<br>\sum_{k=-\infty}^{+\infty}e^{j2\pi kfT}=\frac{1}{T}\sum_{k=-\infty}^{+\infty}\delta\left(f-\frac{k}{T}\right)<br>$$</p>
-<h2 id="无记忆数字基带信号的PSD"><a href="#无记忆数字基带信号的PSD" class="headerlink" title="无记忆数字基带信号的PSD"></a>无记忆数字基带信号的PSD</h2><p>基于上述结论，若输入$a_n$为无记忆序列，则有</p>
-<p>$$<br>R_a(n)=\left{\begin{array}{ll}<br>      \mathbb{E}[a_n^2]=\sigma_a^2+\mu_a^2 &amp; n=0 \<br>      \mu_a^2 &amp; n\ne 0<br>    \end{array}\right.<br>$$</p>
+<h2 id="数字基带信号的psd">数字基带信号的PSD</h2>
+<p>假设信号<span class="math inline">\(X(t)=\sum_n a_n g(t-nT_s)\)</span>，则其为循环随机平稳过程。则其平均自相关函数为：</p>
+<p><span class="math display">\[
+\begin{aligned}
+\overline{R_X(\tau)}&amp;=\frac{1}{T_s}\int_0^{T_s}R_X(t+\tau,t)dt \\
+&amp;=\frac{1}{T_s}\int_0^{T_s} \sum_{k=-\infty}^{+\infty}\sum_{m=-\infty}^{+\infty}R_a(k)g(t+\tau-kT_s-mT_s)g^*(t-mT_s) dt \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}\sum_{m=-\infty}^{+\infty}\int_0^{T_s}R_a(k)g(t+\tau-kT_s-mT_s)g^*(t-mT_s) dt \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}\sum_{m=-\infty}^{+\infty}\int_{-mT_s}^{-(m-1)T_s}R_a(k)g(u+\tau-kT_s)g^*(u) du\\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}\int_{-\infty}^{+\infty}R_a(k)g(u+\tau-kT_s)g^*(u) du
+\end{aligned}
+\]</span></p>
+<p>假设<span class="math inline">\(g(t)\)</span>的傅里叶变换为<span class="math inline">\(G(f)\)</span>，则上式的傅里叶变换即为功率谱密度函数，可推导如下：</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathcal{S}_X(f)&amp;=\int_{-\infty}^{+\infty}\overline{R_X(\tau)}e^{-j2\pi f\tau}d\tau \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(u+\tau-kT_s)g^*(u)e^{-j2\pi f\tau}du d\tau \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(u+\tau-kT_s)g^*(u)e^{j2\pi fu} e^{-j2\pi f(u+\tau-kT_s)} e^{-j2\pi fkT_s} du d\tau \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)e^{-j2\pi fkT_s}\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}g(u+\tau-kT_s)g^*(u)e^{j2\pi fu} e^{-j2\pi f(u+\tau-kT_s)}du d\tau \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)e^{-j2\pi fkT_s}|G(f)|^2 \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}[R_a(k)-R_a(0)]e^{-j2\pi fkT_s}|G(f)|^2 + \frac{R_a(0)}{T_s}|G(f)|^2\sum_{k=-\infty}^{+\infty}e^{-j2\pi fkT_s} \\
+&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}[R_a(k)-R_a(0)]e^{-j2\pi fkT_s}|G(f)|^2 + \frac{R_a(0)}{T_s}|G(f)|^2\sum_{k=-\infty}^{+\infty}\delta(f+\frac{k}{T_s})
+\end{aligned}
+\]</span></p>
+<p>上面的推导中使用了一个重要的关系式： <span class="math display">\[
+\sum_{k=-\infty}^{+\infty}e^{j2\pi kfT}=\frac{1}{T}\sum_{k=-\infty}^{+\infty}\delta\left(f-\frac{k}{T}\right)
+\]</span></p>
+<h2 id="无记忆数字基带信号的psd">无记忆数字基带信号的PSD</h2>
+<p>基于上述结论，若输入<span class="math inline">\(a_n\)</span>为无记忆序列，则有</p>
+<p><span class="math display">\[
+R_a(n)=\left\{\begin{array}{ll}
+      \mathbb{E}[a_n^2]=\sigma_a^2+\mu_a^2 &amp; n=0 \\
+      \mu_a^2 &amp; n\ne 0
+    \end{array}\right.
+\]</span></p>
 <p>带入前面的公式，则有：</p>
-<p>$$<br>\begin{aligned}<br>\mathcal{S}<em>X(f)&amp;=\frac{1}{T_s}\sum</em>{k=-\infty}^{+\infty}R_a(k)e^{-j2\pi fkT_s}|G(f)|^2 \<br>&amp;= \frac{1}{T_s}\sum_{k}\mu_a^2 e^{-j2\pi fkT_s}|G(f)|^2 + \frac{\sigma_a^2}{T_s}|G(f)|^2 \<br>&amp;=\frac{\sigma_a^2}{T_s}|G(f)|^2 +\frac{\mu_a^2}{T_s}\sum_{k}\left|G\left(\frac{k}{T_s}\right)\right|^2\delta(f-\frac{k}{T_s})<br>\end{aligned}<br>$$</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathcal{S}_X(f)&amp;=\frac{1}{T_s}\sum_{k=-\infty}^{+\infty}R_a(k)e^{-j2\pi fkT_s}|G(f)|^2 \\
+&amp;= \frac{1}{T_s}\sum_{k}\mu_a^2 e^{-j2\pi fkT_s}|G(f)|^2 + \frac{\sigma_a^2}{T_s}|G(f)|^2 \\
+&amp;=\frac{\sigma_a^2}{T_s}|G(f)|^2 +\frac{\mu_a^2}{T_s}\sum_{k}\left|G\left(\frac{k}{T_s}\right)\right|^2\delta(f-\frac{k}{T_s}) 
+\end{aligned}
+\]</span></p>
 <p>上式可以拆成两部分，前面的部分为连续谱，第二部分为离散谱。</p>
-<h2 id="OQPSK的PSD"><a href="#OQPSK的PSD" class="headerlink" title="OQPSK的PSD"></a>OQPSK的PSD</h2><p>假设信号如下：<br>$$<br>X(t)=I_n(t)\cos \omega_ct-Q_n(t)\sin\omega_ct<br>$$<br>其中$I_n(t)=\sum_n a_n g(t-nT_s),Q_n(t)=\sum_n b_n g(t-nT_s)$则其自相关函数如下：<br>$$<br>\begin{align}<br>R_X(t+\tau,t)&amp;=\mathbb{E}\left{[I_n(t+\tau)\cos \omega_c(t+\tau)-Q_n(t+\tau)\sin\omega_c(t+\tau)][I_n(t)\cos \omega_ct-Q_n(t)\sin\omega_ct]\right} \<br>&amp;=\mathbb{E}\left{I_n(t+\tau)I_n(t)\cos\omega_c(t+\tau)\cos\omega_ct\right}-\mathbb{E}\left{I_n(t+\tau)Q_n(t)\cos\omega_c(t+\tau)\sin\omega_ct\right}\<br>&amp;-\mathbb{E}\left{Q_n(t+\tau)I_n(t)\sin\omega_c(t+\tau)\cos\omega_ct\right}+<br>\mathbb{E}\left{Q_n(t+\tau)Q_n(t)\sin\omega_c(t+\tau)\sin\omega_ct\right}\<br>&amp;=R_{II}(\tau)<br>\end{align}<br>$$</p>
-<p>令$g_k(\tau)=\int_{-\infty}^{+\infty}R_a(k)g(u+\tau)g^*(u)du$，则上式的傅里叶变换为：<br>$$<br>\frac{1}{T_s}\sum_{n=-\infty}^{+\infty}G_n(f)e^{-j2\pi nfT_s}<br>$$</p>
+<h2 id="oqpsk的psd">OQPSK的PSD</h2>
+<p>假设信号如下： <span class="math display">\[
+X(t)=I_n(t)\cos \omega_ct-Q_n(t)\sin\omega_ct
+\]</span> 其中<span class="math inline">\(I_n(t)=\sum_n a_n g(t-nT_s),Q_n(t)=\sum_n b_n g(t-nT_s)\)</span>则其自相关函数如下： <span class="math display">\[
+\begin{align}
+R_X(t+\tau,t)&amp;=\mathbb{E}\left\{[I_n(t+\tau)\cos \omega_c(t+\tau)-Q_n(t+\tau)\sin\omega_c(t+\tau)][I_n(t)\cos \omega_ct-Q_n(t)\sin\omega_ct]\right\} \\
+&amp;=\mathbb{E}\left\{I_n(t+\tau)I_n(t)\cos\omega_c(t+\tau)\cos\omega_ct\right\}-\mathbb{E}\left\{I_n(t+\tau)Q_n(t)\cos\omega_c(t+\tau)\sin\omega_ct\right\}\\
+&amp;-\mathbb{E}\left\{Q_n(t+\tau)I_n(t)\sin\omega_c(t+\tau)\cos\omega_ct\right\}+
+\mathbb{E}\left\{Q_n(t+\tau)Q_n(t)\sin\omega_c(t+\tau)\sin\omega_ct\right\}\\
+&amp;=R_{II}(\tau)
+\end{align}
+\]</span></p>
+<p>令<span class="math inline">\(g_k(\tau)=\int_{-\infty}^{+\infty}R_a(k)g(u+\tau)g^*(u)du\)</span>，则上式的傅里叶变换为： <span class="math display">\[
+\frac{1}{T_s}\sum_{n=-\infty}^{+\infty}G_n(f)e^{-j2\pi nfT_s}
+\]</span></p>
 <pre>
 15:50:27.660556 [PHY0] [I] [09090] PDCCH: UL DCI Format0  rnti=0x46, cce_index=4, L=2, tpc=1, tti_tx_dl=9094
 </pre>
